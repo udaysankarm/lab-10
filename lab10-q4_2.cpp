@@ -115,7 +115,7 @@ class rectangle
 //methods for class rectangle
 rectangle::rectangle()//default constructor
 {
-	a.Set_X(0);
+	a.Set_X(0); // assinging value to each cordinate
 	a.Set_Y(0);
 	b.Set_X(1);
 	b.Set_Y(0);
@@ -129,7 +129,7 @@ rectangle::rectangle(Point j,Point k)//constructor with 2 arguments
 	a=j; //giving the value of points to the variabls in class
 	c=k;
 	b.Set_X(c.Get_X());
-	b.Set_Y(a.Get_Y());
+	b.Set_Y(a.Get_Y()); //assingin values to the unknown cordinates
 	d.Set_X(a.Get_X());
 	d.Set_Y(c.Get_Y());
 }
@@ -164,13 +164,13 @@ int main()
   Point u(x,y);	
                                  /* instruction to user for inputting the values with the constrain that the first one is         leftbottom and the next is top right*/
 	rectangle q(t,u);
-	q.print_a();
+	q.print_a(); //printing the cordinates
 	q.print_b();
 	q.print_c();
 	q.print_d();
 	cout<<"\n out-put for default settings\n";
 	rectangle r;
-	r.print_a();
+	r.print_a(); //printing the default cordinates
 	r.print_b();
 	r.print_c();
 	r.print_d();
