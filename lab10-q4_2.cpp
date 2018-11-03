@@ -103,9 +103,8 @@ void Point::print()
 class rectangle
 {
 	private:
-	public:
 	Point a,b,c,d; /*here a b c d are vetices starting from left bottom in a clockwise order*/
-
+	public:
 	rectangle();//default constructor
 	rectangle(Point j,Point k);//constructor with 2 arguments
 	void print_a();
