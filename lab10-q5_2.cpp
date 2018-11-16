@@ -9,20 +9,14 @@ class ZooAnimal
     int weightDate;
     int weight;
   public:	
-    void Destroy (); // destroy function
     char* reptName ();
     int daysSinceLastWeighed (int today);
-		void Create(char A[20],int x,int y,int z); //prototype for the function Create
+     void Create(char A[20],int x,int y,int z); //prototype for the function Create
 };
 void ZooAnimal::Create(char A[20],int x,int y,int z)
 {
 cout<<A<<endl<<x<<endl<<y<<endl<<z<<endl;
 }
- void ZooAnimal::Destroy ()
-   {    
-    delete [] name;
-   }
-
    // -------- member function to return the animal's name
    char* ZooAnimal::reptName ()
    {
@@ -48,7 +42,7 @@ if (today < weightDate)
 
 int main()
 { 
-	ZooAnimal K;
-	K.Create("fesdg",1,2,3);
+	ZooAnimal K; //declaring the object K
+	K.Create("fesdg",1,2,3);//calling the create function
 	return 0;
 }
